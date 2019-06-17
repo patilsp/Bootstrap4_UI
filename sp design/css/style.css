@@ -1,7 +1,7 @@
 /* Custom Stylesheet */
 /**
  *
- * Made By Joash Pereira
+ * Made By Santosh Patil
  * Thanks for MaterializeCSS.com
  */
 
@@ -20,7 +20,9 @@
     min-height: 632px;
     max-height: 864px;
     position: relative;
-    background-color: #2196F3;
+    background-image: linear-gradient(to right bottom, rgba(54, 54, 54, 0), rgba(121, 121, 121, 0)), url(../img/black-line.png);
+    background-size: cover;
+    background-position: top;
 }
 
 #nav_f{
@@ -46,11 +48,22 @@
     letter-spacing: 7px;
 }
 
-.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+.text_h2 {
+    font-weight: 200;
+    margin-bottom: 4%; 
+    line-height: 4.5rem;
+}
 
-.span_h2 {font-weight: 300;color: #2196F3;}
+.span_h2 {
+    font-weight: 300;
+    color: #55b855;
+}
 
-.text_b{color: #2196F3;}
+.text_b{
+    text-transform: uppercase;
+        text-align: center;
+        color: #55b855;
+    }
 
 .in{font-weight: 400 !important; font-style: normal !important;}
 
@@ -74,6 +87,12 @@ nav ul a {
     display: block;
     font-weight: 300;
     padding: 0px 15px;
+}
+
+.img-responsive{
+    height: 40%;
+    width: 100%;
+   
 }
 
 .cd-headline.type .cd-words-wrapper {
@@ -196,20 +215,20 @@ nav ul a {
     left:0;
     right:0;
     bottom:0;
-    background-color:#fff; /* change if the mask should have another color then white */
-    z-index:1200; /* makes sure it stays on top */
+    background-color:#fff; 
+    z-index:1200; 
 }
 
 #status {
     width:200px;
     height:200px;
     position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
-    top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(../img/status.gif); /* path to your loading animation */
+    left:50%;
+    top:50%; 
+    background-image:url(../img/loader.gif); 
     background-repeat:no-repeat;
     background-position:center;
-    margin:-100px 0 0 -100px; /* is width and height divided by two */
+    margin:-100px 0 0 -100px;
 }
 
 @media only screen and (max-width: 480px) {
